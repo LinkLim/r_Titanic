@@ -47,7 +47,7 @@ prediction <- predict(fit,test,type='class')
 #submit <- data.frame(PassengerId = test$PassengerId, survived = prediction)
 #write.csv(submit,file = "myfirstdtree.csv",row.names = FALSE)
 
-?rpart.control
+??rpart.control
 fit <- rpart(survived ~ pclass + sex + age + sibsp + parch + fare + embarked,
              data=train,
              method="class",
